@@ -1,0 +1,81 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 900px;
+    height: 900px;
+    margin: 0px auto 0;
+    position: relative;
+    border: 1px solid #000;
+  
+}
+.wrapper::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+    left: 50%;
+    top: calc(50% + 20px);
+
+}
+.year, .month, .day, .week, .hour, .minute, .second {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: all 0.2s linear;
+    transform-origin: 0 0;
+    line-height: 20px;
+    height: 20px;
+
+}
+.year {
+    /* width: 100px; */
+}
+.month {
+    width: 100px;
+}
+.day {
+    width: 150px;
+}
+.week {
+    width: 220px;
+}
+.hour {
+    width: 270px;
+}
+.minute {
+    width: 320px;
+}
+.second{
+    width: 370px;
+}
+span {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    text-align: right;
+    transform-origin: 0 0;
+    transition: all 1s linear;
+}
+.month span {
+    transition-duration: 1s;
+}
+.day span {
+    transition-duration: 1s;
+}
+.week span {
+    transition-duration: 0.5s;
+}
+.hour span {
+    transition-duration: 1s;
+}
+.minute span {
+    transition-duration: 1s;
+}
+.second span {
+    transition-duration: 1s;
+}
